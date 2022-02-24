@@ -117,15 +117,6 @@ npm i @angular-package/ui --save
 
 ```typescript
 import {
-  // Abstract class.
-  Inequality,
-  // Class.
-  Greater,
-  Less,
-  Maximum,
-  Minimum,
-  Number,
-  Range,
 } from '@angular-package/ui';
 ```
 
