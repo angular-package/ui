@@ -1,19 +1,16 @@
 import { NgModule, ModuleWithProviders, Optional, Inject, SkipSelf } from '@angular/core';
 import { UiComponent } from './ui.component';
 
-import { UiRangeComponent } from '../form/range/src/range.component';
 import { UiElements, UiService } from './ui.service';
 
 @NgModule({
   declarations: [
     UiComponent,
-    UiRangeComponent,
   ],
   imports: [
   ],
   exports: [
     UiComponent,
-    UiRangeComponent
   ]
 })
 export class UiModule {
