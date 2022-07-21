@@ -1,5 +1,5 @@
 // Class.
-import { Name } from '../../../name';
+import { Name } from '../../name';
 
 // Constant.
 import { AVAILABLE_LEVELS } from './available-levels.const';
