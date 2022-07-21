@@ -1,10 +1,12 @@
 // Class.
 import { Greater } from './greater.class';
 import { Less } from './less.class';
+import { Number } from '../../number';
+
 /**
  * The `Inequality` abstract primitive wrapper `object` represents the primitive value greater or less than the given.
  */
-export abstract class Inequality<Value extends number> extends Number {
+export abstract class Inequality<Value extends number> extends Number<Value> {
   //#region instance public accessors.
   /**
    * The `get` accessor obtains from the private `#greater` property an instance of the `Greater` with a primitive value from a given
