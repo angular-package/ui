@@ -1,7 +1,10 @@
+// Number.
+import { Number } from '../../number';
+
 /**
  * The `Greater` primitive wrapper `object` represents the primitive value of the `number` type greater than the given.
  */
-export class Greater<Value extends number> extends Number {
+export class Greater<Value extends number> extends Number<Value> {
   /**
    * The `get` accessor, with the help of `toStringTag`, changes the default tag to `'Greater'` for an instance of `Greater`. It can be read
    * by the `typeOf()` function of `@angular-package/type`.
@@ -19,8 +22,8 @@ export class Greater<Value extends number> extends Number {
    * @returns The return value is the `Greater` instance with the primitive value of the given `value`.
    * @angularpackage
    */
-  public static create<Value extends number>(value: Value): Greater<Value> {
-    return new this(value);
+  public static create<Value extends number>(value?: Value): Greater<Value> {
+    return new this(value) as Greater<Value>;
   }
 
   /**
@@ -51,7 +54,7 @@ public static isGreater<Value extends number>(
    * @param value The value of generic type variable `Value` to set with a new instance.
    * @angularpackage
    */
-  constructor(value: Value) {
+  constructor(value?: Value) {
     super(value);
   }
   //#endregion constructor.

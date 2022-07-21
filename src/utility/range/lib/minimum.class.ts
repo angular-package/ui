@@ -21,7 +21,7 @@ export class Minimum<Value extends number> extends Inequality<Value> {
    * @param value The minimum number of generic type variable `Value` to set with a new instance.
    * @returns The return value is the `Minimum` instance with the primitive value of the given `value`.
    */
-  public static create<Value extends number>(value: Value): Minimum<Value> {
+  public static create<Value extends number>(value: Value | undefined): Minimum<Value> {
     return new this(value);
   }
 
@@ -49,7 +49,7 @@ export class Minimum<Value extends number> extends Inequality<Value> {
    * @param value The value of the generic type variable `Value` is the primitive value of the new instance.
    * @angularpackage
    */
-  constructor(value: Value) {
+  constructor(value?: Value) {
     super(value);
   }
   //#endregion constructor.

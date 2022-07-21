@@ -1,7 +1,10 @@
+// Number.
+import { Number } from '../../number';
+
 /**
  * The `Less` primitive wrapper `object` represents the primitive value of `number` type less than the given.
  */
-export class Less<Value extends number> extends Number {
+export class Less<Value extends number> extends Number<Value> {
   //#region instance public accessors.
   /**
    * The `get` accessor, with the help of `toStringTag`, changes the default tag to `Less` for an instance of `Less`. It can be read
@@ -21,7 +24,7 @@ export class Less<Value extends number> extends Number {
    * @returns The return value is the `Less` instance with the primitive value of the given `value`.
    * @angularpackage
    */
-  public static create<Value extends number>(value: Value): Less<Value> {
+  public static create<Value extends number>(value?: Value): Less<Value> {
     return new this(value);
   }
 
@@ -51,7 +54,7 @@ export class Less<Value extends number> extends Number {
    * @param value The value of generic type variable `Value` to set with a new instance.
    * @angularpackage
    */
-  constructor(value: Value) {
+  constructor(value?: Value) {
     super(value);
   }
   //#endregion constructor.

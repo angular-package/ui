@@ -22,7 +22,7 @@ export class Maximum<Value extends number> extends Inequality<Value> {
    * @returns The return value is the `Maximum` instance of the given primitive `value`.
    * @angularpackage
    */
-  public static create<Value extends number>(value: Value): Maximum<Value> {
+  public static create<Value extends number>(value?: Value): Maximum<Value> {
     return new this(value);
   }
 
@@ -51,7 +51,7 @@ export class Maximum<Value extends number> extends Inequality<Value> {
    * @param value The value of the generic type variable `Value` is the primitive value of the new instance.
    * @angularpackage
    */
-  constructor(value: Value) {
+  constructor(value?: Value) {
     super(value);
   }
   //#endregion constructor.

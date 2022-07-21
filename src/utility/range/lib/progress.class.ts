@@ -3,8 +3,7 @@ import { Maximum } from './maximum.class';
  *
  */
 export class Progress<Max extends number> {
-  constructor(value = 0, max: Max){
-  }
+  constructor(value = 0, max: Max) {}
 
 
 

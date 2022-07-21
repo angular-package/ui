@@ -33,12 +33,12 @@ export abstract class Inequality<Value extends number> extends Number<Value> {
   /**
    * Private property of the `Greater` primitive wrapper `object` indicates the value of the `number` type greater than the given.
    */
-  #greater: Greater<Value>;
+  #greater: Greater<Value> = new Greater();
 
   /**
    * Private property of the `Less` primitive wrapper `object` indicates the value of `number` type less than the given.
    */
-  #less: Less<Value>;
+  #less: Less<Value> = new Less();
   //#endregion instance private properties.
 
   //#region constructor.
@@ -47,10 +47,10 @@ export abstract class Inequality<Value extends number> extends Number<Value> {
    * @param value The value of the generic type variable `Value` is the primitive value of a new child class instance.
    * @angularpackage
    */
-  constructor(value: Value) {
+  constructor(value?: Value) {
     super(value);
-    this.#greater = new Greater(value);
-    this.#less = new Less(value);
+    value && (this.#greater = new Greater(value));
+    value && (this.#less = new Less(value));
   }
   //#endregion constructor.
 
