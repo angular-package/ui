@@ -2,7 +2,7 @@
 import { Observer, Subject, Subscription } from 'rxjs';
 
 // @angular-package/rxjs.
-import { Subjects } from '../../rxjs';
+import { Subjects } from '../rxjs';
 
 // Class.
 import { Boolean } from '../boolean';

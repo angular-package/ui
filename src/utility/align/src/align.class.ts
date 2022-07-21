@@ -1,5 +1,5 @@
 // Class.
-import { Name } from '../../../name/src/name.class';
+import { Name } from '../../name';
 
 /**
  *

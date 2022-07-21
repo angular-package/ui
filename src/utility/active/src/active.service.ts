@@ -1,8 +1,11 @@
 // @angular.
 import { Injectable } from '@angular/core';
 
-// Class.
-import { Active } from './active.class';
+// Active.
+import {
+  // Class.
+  Active
+} from './active.class';
 
 /**
  *

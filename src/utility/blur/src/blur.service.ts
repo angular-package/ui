@@ -1,18 +1,14 @@
 // @angular.
 import { Injectable } from '@angular/core';
-import { Levels, Scale } from '../../scale';
 
 // Scale.
-// import { ScaleService } from '../../scale';
+import {
+  // Type.
+  Levels,
 
-// @Injectable()
-// export class BlurService<
-//   Prefix extends string | undefined
-// > extends ScaleService<`${Prefix}-blur`> {
-//   constructor() {
-//     super();
-//   }
-// }
+  // Class.
+  Scale,
+} from '../../scale';
 
 @Injectable()
 export class BlurService<

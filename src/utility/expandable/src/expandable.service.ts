@@ -1,4 +1,4 @@
-// Class.
+// @angular.
 import { Injectable } from '@angular/core';
 
 // Expandable.

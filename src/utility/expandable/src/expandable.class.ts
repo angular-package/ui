@@ -1,5 +1,7 @@
-// Status.
+// Ability.
 import { Ability } from '../../ability';
+
+// Status.
 import { Status } from '../../lib/status.class';
 
 /**

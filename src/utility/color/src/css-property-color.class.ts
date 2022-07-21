@@ -1,5 +1,7 @@
-// Class.
-import { AffixedName } from '../../../name';
+// Name.
+import { AffixedName } from '../../name';
+
+// Color.
 import { Color } from './color.class';
 
 // Type.

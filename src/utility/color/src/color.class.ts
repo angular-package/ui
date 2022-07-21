@@ -1,5 +1,5 @@
 // Class.
-import { Name } from '../../../name';
+import { Name } from '../../name';
 
 // Type.
 import { Colors } from '../type/colors.type';

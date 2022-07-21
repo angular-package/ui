@@ -1,5 +1,5 @@
 // Class.
-import { Name } from '../../../name/src/name.class';
+import { Name } from '../../name/src/name.class';
 
 // Constant.
 import { AVAILABLE_POSITIONS } from './constant/available-positions.const';
@@ -31,5 +31,3 @@ export class Position<
     });
   }
 }
-
-console.log(`AAAAAAA`, new Position(undefined, { prefix: 'position' }).set('bottom-center'));

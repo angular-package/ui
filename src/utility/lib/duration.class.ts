@@ -2,7 +2,7 @@
 import { Subject } from 'rxjs';
 
 // Range.
-import { Number } from 'dist/range';
+import { Number } from '../range';
 
 /**
  *
