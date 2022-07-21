@@ -29,7 +29,7 @@ export {
   Shade,
 } from './color';
 
-export { CssVar } from './css-var';
+export { CssProperty } from './css-property';
 
 export { Expandable, ExpandableService } from './expandable';
 
