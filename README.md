@@ -23,6 +23,7 @@ The angular-package supports the development process of [angular][angulario]-bas
 | [property][property-github-readme]           | Handles object properties.                                        | [![npm version][property-npm-badge-png]][property-npm-badge] |
 | [range][range-github-readme]                 | The range between a minimum and maximum.                          | [![npm version][range-npm-badge-png]][range-npm-badge] |
 | [reactive][reactive-github-readme]           | Automatize the process of creating some rxjs features.            | [![npm version][reactive-npm-badge-png]][reactive-npm-badge] |
+| [spectre.css][spectrecss-github-readme]      | Modified Spectre.css - a lightweight, responsive, and modern CSS framework originally designed by Yan Zhu. | [![npm version][spectrecss-npm-badge-png]][spectrecss-npm-badge] |
 | [storage][storage-github-readme]             | The storage of data under allowed names.                          | [![npm version][storage-npm-badge-png]][storage-npm-badge] |
 | [tag][tag-github-readme]                     | Any tag with optional attributes.                                 | [![npm version][tag-npm-badge-png]][tag-npm-badge] |
 | [testing][testing-github-readme]             | Support for testing other packages.                               | [![npm version][testing-npm-badge-png]][testing-npm-badge] |
@@ -57,7 +58,9 @@ Configurable user interface.
 
 ## Documentation
 
-For the detailed documentation go to [**https://ui.angular-package.dev**](https://ui.angular-package.dev)
+~~For the detailed documentation go to [**https://ui.angular-package.dev**](https://ui.angular-package.dev)~~
+
+There is no documentation and demonstration available at the moment.
 
 <br>
 
@@ -116,7 +119,149 @@ npm i @angular-package/ui --save
 ## Api
 
 ```typescript
+/*
+ * Public API Surface of ui
+ */
+import { Ability, AbilityService } from '@angular-package/ui';
+import { Active, ActiveService } from '@angular-package/ui';
+import { Align } from '@angular-package/ui';
+
+import { BlurService } from '@angular-package/ui';
+import { Boolean } from '@angular-package/ui';
+
+// Color.
 import {
+  // Class.
+  Color,
+  CssPropertyColor,
+
+  // Type.
+  BgColors,
+  Colors,
+  Shade,
+
+  // Constant.
+  CSS_COLORS
+} from '@angular-package/ui';
+
+// Css property.
+import { CssProperty } from '@angular-package/ui';
+
+// Expandable.
+import {
+  Expandable,
+  ExpandableService,
+} from '@angular-package/ui';
+
+// Main.
+import {
+  Duration,
+  Status,
+} from '@angular-package/ui';
+
+// Margin.
+import {
+  // Class.
+  Margin,
+  MarginService,
+} from '@angular-package/ui';
+
+// Name.
+import {
+  // Class.
+  Name,
+  Prefix,
+  Suffix,
+
+  // Type.
+  AffixedName,
+  PrefixedName,
+  SuffixedName,
+} from '@angular-package/ui';
+
+// Padding.
+import { Padding } from '@angular-package/ui';
+
+// Pattern.
+import { Pattern } from '@angular-package/ui';
+
+// Position.
+import { Position } from '@angular-package/ui';
+
+/*
+ * Public API Surface of range
+ */
+import {
+  // Abstract class.
+  Inequality,
+
+  // Class.
+  Greater,
+  Less,
+  Maximum,
+  Minimum,
+  Number,
+  Range,
+} from '@angular-package/ui';
+
+// Rxjs.
+import {
+  Subjects,
+  Subscriptions,
+} from '@angular-package/ui';
+
+// Scale.
+import {
+  // Class.
+  Scale,
+
+  // Constant.
+  AVAILABLE_LEVELS,
+
+  // Type.
+  Levels
+} from '@angular-package/ui';
+
+// Sidebar.
+import {
+  // Service.
+  SidebarService,
+
+  // Interface.
+  SidebarConfig
+} from '@angular-package/ui';
+
+// Size.
+import {
+  Size,
+  SizeService,
+
+  // Interface.
+  SizeOptions,
+
+  // Type.
+  Sizes,
+  SizesConfig,
+} from '@angular-package/ui';
+
+// String.
+import { String } from '@angular-package/ui';
+
+// Text align.
+import {
+  // Class.
+  TextAlign,
+
+  // Type.
+  TxtAlign
+} from '@angular-package/ui';
+
+// Type.
+import {
+  Presence,
+  Shape,
+  Subscribable,
+  TransitionDuration
 } from '@angular-package/ui';
 ```
 
@@ -324,6 +469,16 @@ MIT © angular-package ([license][ui-license])
 
   <!-- GitHub -->
   [reactive-github-readme]: https://github.com/angular-package/reactive#readme
+
+<!-- Package: spectre.css -->
+  <!-- npm -->
+  [spectrecss-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fspectre.css.svg
+  [spectrecss-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fspectre.css.png
+  [spectrecss-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fspectre.css
+  [spectrecss-npm-readme]: https://www.npmjs.com/package/@angular-package/spectre.css#readme
+
+  <!-- GitHub -->
+  [spectrecss-github-readme]: https://github.com/angular-package/spectre.css#readme
 
 <!-- Package: storage -->
   <!-- npm -->
