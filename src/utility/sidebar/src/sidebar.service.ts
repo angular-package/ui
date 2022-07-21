@@ -2,26 +2,18 @@
 import { Injectable } from '@angular/core';
 
 // Utilities.
-import { Ability } from '../../ability';
-
-// Service.
-// import { AbilityService } from '../../ability/src/ability.service';
-import { Active } from '../../active';
-import { ActiveService } from '../../active/src/active.service';
-import { ExpandableService } from '../../expandable/src/expandable.service';
-import { Size } from '../../size';
-// import { SizeService } from '../../size/src/size.service';
+import {
+  Ability,
+  Active,
+  Expandable,
+  Size,
+} from '../..';
 
 /**
  *
  */
 @Injectable()
 export class SidebarService {
-
-  // public size = new SizeService<'sidebar-size'>().setPrefix('sidebar-size');
-  public get size(): Size<'sidebar-size'> {
-    return this.#size;
-  }
 
   public get ability(): Ability {
     return this.#ability;
@@ -31,11 +23,17 @@ export class SidebarService {
     return this.#active;
   }
 
-  public expandable = new ExpandableService(false);
+  public get expandable(): Expandable {
+    return this.#expandable;
+  }
+
+  public get size(): Size<'sidebar-size'> {
+    return this.#size;
+  }
 
   #active = new Active(false);
   #ability = new Ability(false);
-  #expandable?: ExpandableService;
+  #expandable = new Expandable(false);
   #size = new Size(undefined, { prefix: 'sidebar-size' });
 
   /**
