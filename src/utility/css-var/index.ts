@@ -1,1 +1,1 @@
-export { CssProperty as CssVar } from './src/css-var.class';
+export { CssProperty } from './src/css-property.class';
