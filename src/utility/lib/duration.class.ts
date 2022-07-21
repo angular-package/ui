@@ -46,7 +46,6 @@ export class Duration<T extends number> extends Number<T> {
    * @angularpackage
    */
   public clearTimeOut(): this {
-    console.log(`clearTimeOut: `, this.#durationTimeOut);
     this.#durationTimeOut && clearTimeout(this.#durationTimeOut);
     return this;
   }
@@ -59,7 +58,7 @@ export class Duration<T extends number> extends Number<T> {
   public doAfter(callbackFn: (duration: number) => void): this {
     this.hasDuration(
       (duration) =>
-        (console.log(`doAfter()`), this.#durationTimeOut = setTimeout(() => {
+        (this.#durationTimeOut = setTimeout(() => {
           callbackFn(duration);
           this.#done.next(true);
         }, duration))
