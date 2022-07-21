@@ -2,7 +2,7 @@
 import { Observer } from 'rxjs';
 
 // Class.
-import { AffixedName, Name } from '../../../name';
+import { AffixedName, Name } from '../../name';
 
 // Constant.
 import { AVAILABLE_SIZES } from './available-sizes.const';
