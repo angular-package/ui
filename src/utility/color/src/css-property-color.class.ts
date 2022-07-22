@@ -17,7 +17,7 @@ import { CSS_COLORS } from './css-colors.const';
  */
 export class CssPropertyColor<
   Prefix extends string | undefined,
-  AvailableColors extends string = Colors,
+  AvailableColors extends Colors = Colors,
   Value extends AvailableColors = AvailableColors
 > extends Color<Prefix, 'color', AvailableColors, Value> {
   public static rootStyle = (document.querySelector(':root') as HTMLElement)
@@ -209,6 +209,23 @@ export class CssPropertyColor<
   }
 
   /**
+   * The static method gets shade - the dark or light suffix of the given `color`.
+   * @param color
+   * @returns
+   * @angularpackage
+   */
+  public static getShade(
+    color?: Colors
+  ): Shade | false {
+    return (
+      typeof color === 'string' &&
+      color.indexOf('-') > -1 &&
+      (color.indexOf('dark') > -1 || color.indexOf('light') > -1) &&
+      (color.split('-').pop() as Shade)
+    );
+  }
+
+  /**
    *
    * @param color
    * @param prefix
@@ -221,6 +238,8 @@ export class CssPropertyColor<
     availableColors = CSS_COLORS as AvailableColors[]
   ) {
     super(color, { prefix, suffix: 'color', availableColors });
+    const shade = CssPropertyColor.getShade(color);
+    shade && this.setShade(shade);
   }
 
   public getHex(shade: Shade = this.#shade as Shade): string {
@@ -314,8 +333,8 @@ export class CssPropertyColor<
     return this;
   }
 
-  public setShade(shade: Shade): this {
-    this.#shade = shade;
+  public setShade(shade?: Shade): this {
+    this.#shade = shade ? shade : this.#shade;
     return this;
   }
 

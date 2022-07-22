@@ -1,5 +1,5 @@
 // Utilities.
-import { String } from '../../';
+import { String } from '../../string';
 
 /**
  *
