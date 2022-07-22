@@ -1,9 +1,13 @@
 {
   "name": "@angular-package/ui",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.0",
   "description": "Configurable user interface.",
   "author": "@angular-package <contact@angular-package.dev> (https://angular-package.dev)",
   "homepage": "https://github.com/angular-package/ui",
+  "peerDependencies": {
+    "@angular/core": ">10.0.0",
+    "rxjs": ">6.0.0"
+  },
   "dependencies": {
     "tslib": "^2.4.0"
   },
