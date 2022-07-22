@@ -2,12 +2,10 @@
 import { Injectable } from '@angular/core';
 
 // Utilities.
-import {
-  Ability,
-  Active,
-  Expandable,
-  Size,
-} from '../..';
+import { Ability } from '../../ability';
+import { Active } from '../../active';
+import { Expandable } from '../../expandable';
+import { Size } from '../../size';
 
 /**
  *

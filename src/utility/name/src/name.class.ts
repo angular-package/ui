@@ -6,7 +6,9 @@ import { Prefix } from './prefix.class';
 import { Suffix } from './suffix.class';
 
 // Utilities.
-import { Ability, Active, String } from '../../';
+import { Ability } from '../../ability';
+import { Active } from '../../active';
+import { String } from '../../string';
 
 // Rxjs.
 import { Subjects } from '../../rxjs';
