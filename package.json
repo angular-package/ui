@@ -1,6 +1,6 @@
 {
   "name": "@angular-package/ui",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Configurable user interface.",
   "author": "@angular-package <contact@angular-package.dev> (https://angular-package.dev)",
   "homepage": "https://github.com/angular-package/ui",
