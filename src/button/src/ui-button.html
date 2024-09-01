@@ -1,0 +1,8 @@
+<!-- UiButton: template. -->
+<ng-template #container></ng-template>
+<!-- UIButton: ProjectableNodes. -->
+<div #projectableNodes>
+  <div get #content><ng-content select="[button-content]"></ng-content></div>
+  <div get #left><ng-content select="[button-content-left]"></ng-content></div>
+  <div get #right><ng-content select="[button-content-right]"></ng-content></div>
+</div>
