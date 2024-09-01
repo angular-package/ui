@@ -1,38 +1,40 @@
 import { Colors } from '../type/colors.type';
 
 export const AVAILABLE_COLORS: Colors[] = [
+  'basic',
+  'default',
+
+  // Shade colors.
+  'dark',
+  'light',
+
   // Core colors.
   'accent',
-  'default',
-  'basic',
 
-  // Primary color.
+  // Primary colors.
   'primary',
   'primary-dark',
   'primary-light',
 
-  // Secondary color.
+  // Secondary colors.
   'secondary',
   'secondary-dark',
   'secondary-light',
-
-  // Body colors.
-  'body-bg',
-  'body-font',
-
-  // Bg colors.
-  'bg',
-  'bg-dark',
-  'bg-light',
 
   // Gray colors.
   'gray',
   'gray-dark',
   'gray-light',
 
-  // Shade colors.
-  'dark',
-  'light',
+  // Bg colors.
+  'bg',
+  'bg-dark',
+  'bg-light',
+
+  // Border colors.
+  'border',
+  'border-dark',
+  'border-light',
 
   // Control colors.
   'disabled',
@@ -41,9 +43,18 @@ export const AVAILABLE_COLORS: Colors[] = [
   'success',
   'warning',
 
+  // Link colors.
+  'link',
+  'link-dark',
+  'link-light',
+
   // Other colors.
-  'border',
   'code',
   'highlight',
-  'link',
+
+  // Body colors.
+  'body-bg',
+  'body-font',
+
+  // 'parallax-fade'
 ];
